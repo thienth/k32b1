@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// b2 
+		// var str1 = prompt('Nhap chuoi');
+
+		// var str1 = str1.trim();
+
+		// console.log(str1);
+		// b3
+		// var str1 = prompt('Nhap chuoi 1');
+		// var str2 = prompt('Nhap chuoi 2');
+		// alert(str1+str2);
+		// b6
+		// var str = prompt('Nhap chuoi ').trim();
+		// var arrStr = str.split(" ");
+		// var str2 = ""
+		// for (var i = 0; i < arrStr.length; i++) {
+			
+		// 	var firstChar = arrStr[i][0].toUpperCase();
+		// 	str2+= firstChar + arrStr[i].slice(1, arrStr[i].length+1) + " ";
+			
+		// }
+		// str2 = str2.trim();
+
+		// alert(str2);
+		// 
+		// b9
+		var str1 = prompt('Nhap chuoi ').trim();
+		var str2 = prompt('ky tu muon tim vi tri ').trim();
+		var arrStr = str1.split(" ");
+		var vitri = -1;
+
+		for (var i = 0; i < arrStr.length; i++) {
+			if(arrStr[i].indexOf(str2) != -1){
+				vitri = i;
+				break;
+			}
+		}
+
+		if(vitri == -1){
+			alert('Tu ban muon tim khong xuat hien trong chuoi goc');
+		}else{
+			alert(`Từ bạn muốn tìm (${str2}) xuất hiện tại từ thứ ${i+1} trong chuỗi ${str1}`);
+		}
+		
+	</script>
+</body>
+</html> 

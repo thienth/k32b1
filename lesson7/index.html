@@ -1,0 +1,55 @@
+<DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		var str = prompt('Nhap chuoi bat ky');
+		var dem = 0;
+		var u = 0;
+		var e = 0;
+		var a = 0;
+		var o = 0;
+		var kti = 0;
+
+		for (var i = 0; i < str.length; i++) {
+			if(	str[i] == 'u' 
+				|| str[i] == 'e'
+				|| str[i] == 'o'
+				|| str[i] == 'a'
+				|| str[i] == 'i'){
+
+				switch (str[i]) {
+					case 'u':
+						u++;
+						break;
+					case 'e':
+						e++;
+						break;
+					case 'a':
+						a++;
+						break;
+					case 'o':
+						o++;
+						break;
+					case 'i':
+						kti++;
+						break;
+				}
+
+
+				dem++;
+			}
+		}
+
+		alert(`Có tổng cộng ${dem} nguyên âm trong chuỗi
+			u = ${u}, e = ${e}, a = ${a}, o = ${o}, i = ${kti}`);
+
+
+	</script>
+</body>
+</html>

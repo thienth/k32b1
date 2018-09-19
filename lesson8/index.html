@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<button onclick="showGender()">CLick me</button>
+	<code>
+		asdfjsdfaf
+		something
+	</code>
+	asdflkajsfa
+<script type="text/javascript">
+	function showGender(){
+		var gender = prompt('Vui long nhap gioi tinh cua ban');
+
+		gender = gender.toLowerCase();
+
+		if(gender == 'nam' || gender == 'male'){
+			alert('ban that dep trai');
+		}else if(gender == 'nu' || gender == 'female'){
+			alert('ban that xinh gai');
+		}else{
+			alert('Ban thuoc the gioi thu 3');
+		}
+	}
+
+
+	// showGender();
+
+
+	function getMaximum(a, b, c){
+		a = Number(a);
+		b = Number(b);
+		c = Number(c);
+
+		var max = a;
+		if(max < b) max = b;
+		if(max < c) max = c;
+		return max;
+	}
+
+	// var soA = prompt('nhap so A');
+	// var soB = prompt('nhap so B');
+	// var soC = prompt('nhap so C');
+
+	// var soMax = getMaximum(soB, soA, soC);
+
+	// alert(soMax);
+
+</script>
+</body>
+</html>

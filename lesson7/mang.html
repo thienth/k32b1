@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	b1. Tạo ra 1 mảng 10 số random số nguyên chạy từ 1 -> 100
+	// 1 tao mang rong
+	// 2 tao vong lap 1 -> 10
+	// 3 sinh ra so random 1 -> 100
+	// 4 add so random vua sinh ra vao cuoi mang o buoc 1
+
+	b2. sử dụng kết quả mảng random của bài 1
+		Đếm xem trong mảng có bao nhiêu phần tử là số chẵn
+	b3. sử dụng kết quả mảng của bài 1
+		tìm phần tử lớn nhất trong mảng
+	b4. Tính tổng các phần tử nằm trong mảng
+
+<script type="text/javascript">
+	var arr = [];
+	var soChan = 0;
+	var max = 0;
+	var tong =0;
+	for (var i = 0; i < 10; i++) {
+		var rand = Math.round(Math.random()*100)+1;
+		if(rand%2 == 0) soChan++;
+		if(max < rand) max = rand;
+		tong+=rand;
+		arr.push(rand);
+	}
+	
+
+	console.log(arr);
+	console.log(`Có tổng cộng ${soChan} số chẵn`);
+	console.log(`Số lớn nhất trong mảng là ${max}`);
+	console.log(`Tổng số các phần tử là ${tong}`);
+</script>
+</body>
+</html>
