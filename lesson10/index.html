@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div 
+		style="width: 100px;height: 100px; background: green;" 
+		onmouseover="this.style.background = 'red'"
+		onmouseout="this.style.background = 'green'" 
+	></div>
+	<img src="anh-2.jpg" width="200" 
+		onmouseover="this.src = 'anh-1.jpg'"
+		onmouseout="this.src = 'anh-2.jpg'" 
+	>
+
+
+	<div 
+		style="width: 100px;height: 100px; background: #ccc;" 
+		onmousemove="over()"
+	></div>
+
+
+	<input type="text" onkeyup="console.log(this.value); this.style.color ='black'" onfocus="this.style.color = 'red'" >
+
+	<select onblur="console.log(this.value)">
+		<option value="1">Ha noi</option>
+		<option value="2">TP.HCM</option>
+		<option value="3">Da Nang</option>
+	</select>
+
+	<script type="text/javascript">
+		var count=0;
+		function over(){
+			count++;
+			console.log(count);
+		}
+	</script>
+
+
+</body>
+</html>

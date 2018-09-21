@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="content" oninput="changeText()">
+	<h4 test='thienth' >dung </h3>
+	<script type="text/javascript">
+
+		var h2 = document.querySelector('[test="thienth"]');
+
+		function changeText(){
+			var val = document.querySelector('#content').value;
+			h2.innerText = val; //=> thay doi chu viet trong the
+		}
+
+
+
+		
+	</script>
+</body>
+</html>
